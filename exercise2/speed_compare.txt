@@ -1,0 +1,11 @@
+***Tính Speed up cho bài 2:
+- Khi thực thi chương trình, real time là tổng thời gian thực hiện chương trình trong thực tế, user time là tổng thời gian
+thực thi chương trình trong CPU của các thread. Do đó, nếu thực hiện chương trình dưới dạng song song nhiều luồng,
+user time sẽ lớn hơn real time.
+- Để tính speed up, thực hiện khảo sát 2 trường hợp: pi_serial, pi_multi-thread 4 luồng.
+- Với tập điểm là 100000
+- Đối với mỗi trường hợp, thực thi chương trình 10 lần và lấy kết quả trung bình để so sánh thời gian thực thi.
+- Kết quả thu được như sau:
+	+ pi_serial: real time = 0,002113; user time = 0,00248s
+	+ pi_multi-thread 4 luồng: real time = 0,00066s; user time = 0,0081
+- Speed up real time giữa 1 luồng và 4 luồng: 0,002113/0,00066 = 3,2 lần
