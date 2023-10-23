@@ -3,9 +3,9 @@
 thực thi chương trình trong CPU của các thread. Do đó, nếu thực hiện chương trình dưới dạng song song nhiều luồng,
 user time sẽ lớn hơn real time.
 - Để tính speed up, thực hiện khảo sát 2 trường hợp: pi_serial, pi_multi-thread 4 luồng.
-- Với tập điểm là 100000
+- Với tập input là 100000, 10 number thread
 - Đối với mỗi trường hợp, thực thi chương trình 10 lần và lấy kết quả trung bình để so sánh thời gian thực thi.
 - Kết quả thu được như sau:
-	+ pi_serial: real time = 0,002113; user time = 0,00248s
-	+ pi_multi-thread 4 luồng: real time = 0,00066s; user time = 0,0081
-- Speed up real time giữa 1 luồng và 4 luồng: 0,002113/0,00066 = 3,2 lần
+	+pi_multi-thread : real time = 0,0000353; user time = 0,00248s
+	+pi serial: real time = 0,000113s; user time = 0,000132
+- Speed up real time giữa 1 luồng và 10 luồng: 0,000113/0,0000353 = 3,2 lần
